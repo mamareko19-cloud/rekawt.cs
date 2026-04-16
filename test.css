@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #01cab9; /* ڕەنگی پشتەوەی کارتەکە */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-section {
+    position: relative;
+    width: 350px;
+    padding: 35px 25px;
+    border-radius: 40px;
+    text-align: center;
+    overflow: hidden;
+    
+    /* لێرەدا وێنە نوێیەکە وەک باکگراوند دادەنێین */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('card-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    color: white; /* نووسینەکان دەکاتە سپی بۆ ئەوەی لەسەر شینەکە دیار بن */
+    margin: 20px auto; /* بۆ ئەوەی کارتەکە لە ناوەڕاست بمێنێتەوە */
+}
+
+/* ستایلی وێنەی پڕۆفایلەکەت بۆ ئەوەی خڕ بێت */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.profile-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 18px;
+    object-fit: cover;
+    position: relative;
+}
+
+.bio {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    border-radius: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* ڕەنگی دوگمەکان وەک وێنە ئەسڵییەکە */
+.facebook { background: #3b5998; }
+.instagram { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); }
+.snapchat { background: #fffc00; color: black !important; }
+.tiktok { background: #010101; }
+.telegram { background: #0088cc; }
+.whatsapp { background: #25d366; }
